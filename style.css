@@ -10,7 +10,6 @@
   --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.65);
 }
 
-/* Smooth scrolling everywhere */
 html {
   scroll-behavior: smooth;
 }
@@ -31,7 +30,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Background image with slight blur */
 .background-gradient {
   position: fixed;
   inset: 0;
@@ -43,7 +41,6 @@ body {
   z-index: -3;
 }
 
-/* Overlay for readability */
 body::before {
   content: "";
   position: fixed;
@@ -51,8 +48,6 @@ body::before {
   background: radial-gradient(circle at top, rgba(0, 0, 0, 0.35), transparent 55%);
   z-index: -2;
 }
-
-/* Floating flower orbs */
 
 .floating-flowers {
   position: fixed;
@@ -67,8 +62,7 @@ body::before {
   width: 160px;
   height: 160px;
   border-radius: 999px;
-  background:
-    radial-gradient(circle at 30% 20%, #e0f2fe, transparent 60%),
+  background: radial-gradient(circle at 30% 20%, #e0f2fe, transparent 60%),
     radial-gradient(circle at 70% 80%, #38bdf8, transparent 65%),
     radial-gradient(circle at 50% 50%, #1d4ed8, transparent 75%);
   filter: blur(1px);
@@ -86,8 +80,6 @@ body::before {
   border: 1px solid rgba(191, 219, 254, 0.25);
   opacity: 0.75;
 }
-
-/* different positions / speeds */
 
 .f1 {
   top: 8%;
@@ -131,8 +123,6 @@ body::before {
     transform: translate3d(0, 0, 0) scale(0.95);
   }
 }
-
-/* HERO */
 
 .hero {
   min-height: 100vh;
@@ -213,8 +203,6 @@ body::before {
   transform: translateX(200%);
 }
 
-/* MEMORY SECTIONS */
-
 main {
   padding: 0 1.5rem 4rem;
 }
@@ -279,8 +267,6 @@ main {
   color: #e8e7ff;
 }
 
-/* Closing section special */
-
 .closing .memory-inner {
   text-align: center;
 }
@@ -298,22 +284,16 @@ main {
   text-transform: uppercase;
 }
 
-/* Scroll reveal animation (simple) */
-
 .memory-inner {
   opacity: 0;
   transform: translateY(26px);
-  transition:
-    opacity 650ms ease,
-    transform 650ms ease;
+  transition: opacity 650ms ease, transform 650ms ease;
 }
 
 .memory-inner.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* Responsive tweaks */
 
 @media (max-width: 640px) {
   .hero-inner,
