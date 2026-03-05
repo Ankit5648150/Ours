@@ -230,4 +230,31 @@ main {
   main {
     padding: 0 1rem 3rem;
   }
+  
+.vine-connector {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.vine-connector path {
+  animation: vineFlow 8s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(255, 181, 194, 0.4));
+}
+
+@keyframes vineFlow {
+  0%, 100% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 8px rgba(255, 181, 194, 0.4));
+  }
+  50% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 16px rgba(255, 181, 194, 0.8));
+  }
+}
 }
